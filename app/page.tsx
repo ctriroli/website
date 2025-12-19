@@ -4,6 +4,7 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
+import { LinkedIn } from "@/components/shared/icons";
 
 export default async function Home() {
 
@@ -25,15 +26,9 @@ export default async function Home() {
         <div className="w-full max-w-screen-xl mx-auto animate-fade-up mb-5">
           <Card
             key={`${features[0].title}-0`}
-            title={features[0].title}
+            title=""
             description={features[0].description}
-            demo={
-              features[0].title === "Beautiful, reusable components" ? (
-                <ComponentGrid />
-              ) : (
-                features[0].demo
-              )
-            }
+            demo={features[0].demo}
             large={features[0].large}
           />
         </div>
@@ -61,9 +56,58 @@ export default async function Home() {
 
 const features = [
   {
-    title: "Beautiful, reusable components",
-    description:
-      "Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com), [Radix UI](https://www.radix-ui.com), and [Framer Motion](https://framer.com/motion). Used in production on [Dub.co](https://dub.co).",
+    title: "Co-Founders",
+    description: "",
+    demo: (
+      <div className="flex items-center justify-center gap-16 py-10 mx-auto">
+        <div className="flex flex-col items-center gap-4">
+          <div className="text-center">
+            <p className="text-sm font-semibold" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Co-Founder, CEO</p>
+          </div>
+          <div className="w-32 h-32 rounded-full bg-gray-200 overflow-hidden">
+            <Image
+              src="/robin.jpg"
+              alt="Robin Jüngerich"
+              width={128}
+              height={128}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <p className="text-sm font-medium" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Robin Jüngerich</p>
+          <a
+            href="http://linkedin.com/in/robinjue/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            <LinkedIn className="w-5 h-5" />
+          </a>
+        </div>
+        <div className="flex flex-col items-center gap-4">
+          <div className="text-center">
+            <p className="text-sm font-semibold" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Co-Founder, CTO</p>
+          </div>
+          <div className="w-32 h-32 rounded-full bg-gray-200 overflow-hidden">
+            <Image
+              src="/roland.jpg"
+              alt="Roland Kossow"
+              width={128}
+              height={128}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <p className="text-sm font-medium" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Roland Kossow</p>
+          <a
+            href="https://www.linkedin.com/in/roland-kossow-57a4461/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            <LinkedIn className="w-5 h-5" />
+          </a>
+        </div>
+      </div>
+    ),
     large: true,
   },
   {
