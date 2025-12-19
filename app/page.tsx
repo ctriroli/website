@@ -18,8 +18,8 @@ export default async function Home() {
           We make enterprise AI actually happen.
         </h1>
         <div className="absolute -bottom-80 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 z-20">
-          <p className="text-sm" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>SCROLL</p>
-          <ChevronDown className="h-4 w-4 animate-bounce" />
+          <p className="text-sm text-gray-700" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>SCROLL</p>
+          <ChevronDown className="h-4 w-4 animate-bounce text-gray-700" />
         </div>
       </div>
       <div className="my-10 w-full px-5 xl:px-0">
@@ -62,7 +62,7 @@ const features = [
       <div className="flex items-center justify-center gap-16 py-10 mx-auto">
         <div className="flex flex-col items-center gap-4">
           <div className="text-center">
-            <p className="text-sm font-semibold" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Co-Founder, CEO</p>
+            <p className="text-sm font-semibold text-gray-800" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Co-Founder, CEO</p>
           </div>
           <div className="w-32 h-32 rounded-full bg-gray-200 overflow-hidden">
             <Image
@@ -73,7 +73,7 @@ const features = [
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-sm font-medium" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Robin Jüngerich</p>
+          <p className="text-sm font-medium text-gray-800" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Robin Jüngerich</p>
           <a
             href="http://linkedin.com/in/robinjue/"
             target="_blank"
@@ -85,7 +85,7 @@ const features = [
         </div>
         <div className="flex flex-col items-center gap-4">
           <div className="text-center">
-            <p className="text-sm font-semibold" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Co-Founder, CTO</p>
+            <p className="text-sm font-semibold text-gray-800" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Co-Founder, CTO</p>
           </div>
           <div className="w-32 h-32 rounded-full bg-gray-200 overflow-hidden">
             <Image
@@ -96,7 +96,7 @@ const features = [
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-sm font-medium" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Roland Kossow</p>
+          <p className="text-sm font-medium text-gray-800" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Roland Kossow</p>
           <a
             href="https://www.linkedin.com/in/roland-kossow-57a4461/"
             target="_blank"

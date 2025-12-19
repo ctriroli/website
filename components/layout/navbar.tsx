@@ -30,7 +30,7 @@ export default function NavBar() {
               height="17"
               className="mr-2"
             ></Image>
-            <p>liot</p>
+            <p className="text-gray-900">liot</p>
           </Link>
           {hasClerk ? (
             <>
