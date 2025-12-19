@@ -90,13 +90,13 @@ const features = [
           <div className="w-32 h-32 rounded-full bg-gray-200 overflow-hidden">
             <Image
               src="/roland.jpg"
-              alt="Roland Kossow"
+              alt="Roladd Kossow"
               width={128}
               height={128}
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-sm font-medium text-gray-800" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Roland Kossow</p>
+          <p className="text-sm font-medium text-gray-800" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>Roladd Kossow</p>
           <a
             href="https://www.linkedin.com/in/roland-kossow-57a4461/"
             target="_blank"
