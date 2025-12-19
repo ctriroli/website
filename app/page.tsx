@@ -9,13 +9,17 @@ export default async function Home() {
 
   return (
     <>
-      <div className="z-10 w-full max-w-7xl px-5 xl:px-0 mb-80 mt-40">
+      <div className="z-10 w-full max-w-7xl px-5 xl:px-0 mb-80 mt-40 relative">
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           We make enterprise AI actually happen.
         </h1>
+        <div className="absolute -bottom-80 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 z-20">
+          <p className="text-sm" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>SCROLL</p>
+          <ChevronDown className="h-4 w-4 animate-bounce" />
+        </div>
       </div>
       <div className="my-10 w-full px-5 xl:px-0">
         <div className="w-full max-w-screen-xl mx-auto animate-fade-up mb-5">
@@ -50,10 +54,6 @@ export default async function Home() {
             />
           ))}
         </div>
-      </div>
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 z-20">
-        <p className="text-sm" style={{ fontFamily: 'Sansation, system-ui, sans-serif' }}>SCROLL</p>
-        <ChevronDown className="h-4 w-4 animate-bounce" />
       </div>
     </>
   );
